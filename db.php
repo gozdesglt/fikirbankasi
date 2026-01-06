@@ -1,3 +1,3 @@
 <?php
-echo "BEN RAILWAY'DEYİM";
+var_dump(getenv("DATABASE_URL"));
 die;
