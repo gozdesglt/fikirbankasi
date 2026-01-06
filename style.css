@@ -1,0 +1,225 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+    background: #f6f8fb;
+    color: #1f2937;
+}
+
+/* HEADER */
+header {
+    background: #fff;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.nav {
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #111827;
+    margin-left: 20px;
+    font-weight: 500;
+}
+
+.btn-login {
+    background: #ff6a3d;
+    color: #fff !important;
+    padding: 10px 18px;
+    border-radius: 8px;
+}
+
+/* CONTAINER */
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 40px 20px;
+}
+
+h1 {
+    font-size: 38px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* CARD */
+.card {
+    background: #fff;
+    padding: 30px;
+    border-radius: 14px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, .05);
+}
+
+/* FORM */
+label {
+    font-weight: 600;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 6px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: 1px solid #d1d5db;
+}
+
+textarea {
+    min-height: 110px;
+}
+
+/* CATEGORY BUTTONS */
+.categories {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+
+.category-btn {
+    padding: 10px 18px;
+    border-radius: 10px;
+    border: 1px solid #cfe3f5;
+    background: #eef6ff;
+    color: #1f3a52;
+    cursor: pointer;
+    font-size: 14px;
+    transition: .2s;
+}
+
+.category-btn:hover {
+    background: #dbeafe;
+}
+
+.category-btn.active {
+    background: #1f3a52;
+    color: #fff;
+}
+
+/* BUTTON */
+button {
+    width: 100%;
+    background: #1f3a52;
+    color: #fff;
+    padding: 14px;
+    border-radius: 12px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.category {
+    background: #fff;
+    padding: 25px;
+    border-radius: 14px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, .06);
+    transition: .2s;
+}
+
+.category:hover {
+    transform: translateY(-4px);
+}
+
+.card {
+    background: #fff;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, .06);
+}
+
+.tag {
+    background: #e0f2fe;
+    padding: 4px 10px;
+    border-radius: 999px;
+    font-size: 13px;
+}
+.category-box {
+    display:block;
+    background:#fff;
+    padding:25px;
+    border-radius:14px;
+    text-decoration:none;
+    color:#111;
+    box-shadow:0 6px 20px rgba(0,0,0,.06);
+    transition:.2s;
+}
+
+.category-box h3 {
+    margin:0 0 8px 0;
+    font-size:18px;
+}
+
+.category-box p {
+    margin:0;
+    color:#555;
+    font-size:14px;
+}
+
+.category-box:hover {
+    transform:translateY(-3px);
+}
+
+/* 🌙 KARANLIK MOD */
+body.dark {
+    background-color: #0f172a;
+    color: #e5e7eb;
+}
+
+body.dark .nav,
+body.dark .card,
+body.dark .sidebar,
+body.dark .category,
+body.dark .category-box {
+    background-color: #020617;
+    color: #e5e7eb;
+}
+
+body.dark a {
+    color: #93c5fd;
+}
+
+body.dark h1,
+body.dark h2,
+body.dark h3,
+body.dark p,
+body.dark label,
+body.dark span {
+    color: #e5e7eb;
+}
+
+body.dark input,
+body.dark textarea,
+body.dark select {
+    background-color: #020617;
+    color: #e5e7eb;
+    border: 1px solid #334155;
+}
+
+body.dark button {
+    background-color: #1e293b;
+    color: #fff;
+    border: none;
+}
+
+body.dark button:hover {
+    opacity: 0.9;
+}
+
