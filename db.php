@@ -1,2 +1,2 @@
 <?php
-var_dump(getenv("DB_PASS"));
+var_dump(getenv("MYSQLPASSWORD"));
