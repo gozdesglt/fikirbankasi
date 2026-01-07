@@ -5,7 +5,7 @@ require "db.php";
 $categories = $pdo->query("
   SELECT 
     categories.id,
-    categories.name,
+    MAX(categories.name) AS name,
     COUNT(ideas.id) AS idea_count
   FROM categories
   LEFT JOIN ideas ON ideas.category_id = categories.id
