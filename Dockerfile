@@ -1,15 +1,19 @@
 FROM php:8.2-apache
 
-# Install PDO and MySQL extensions
+# Diğer MPM'leri KAPAT (ÖNEMLİ)
+RUN a2dismod mpm_event mpm_worker || true
+RUN a2enmod mpm_prefork
+
+# PHP MySQL driver'ları
 RUN docker-php-ext-install pdo pdo_mysql mysqli
 
-# Enable Apache rewrite module
+# Apache rewrite
 RUN a2enmod rewrite
 
-# Copy project files
+# Projeyi kopyala
 COPY . /var/www/html/
 
-# Set permissions
+# Yetkiler
 RUN chown -R www-data:www-data /var/www/html
 
 EXPOSE 80
